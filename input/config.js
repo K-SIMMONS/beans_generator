@@ -1,6 +1,6 @@
 const fs = require("fs");
-const width = 1000;
-const height = 1000;
+const width = 3500;
+const height = 3500;
 const dir = __dirname;
 const rarity = [
   { key: "", val: "original" },
@@ -81,22 +81,22 @@ const layers = [
     position: { x: 0, y: 0 },
     size: { width: width, height: height },
   },
-  // {
-  //   id: 6,
-  //   name: "bottom lid",
-  //   location: `${dir}/bottom lid/`,
-  //   elements: getElements(`${dir}/bottom lid/`),
-  //   position: { x: 0, y: 0 },
-  //   size: { width: width, height: height },
-  // },
-  // {
-  //   id: 7,
-  //   name: "top lid",
-  //   location: `${dir}/top lid/`,
-  //   elements: getElements(`${dir}/top lid/`),
-  //   position: { x: 0, y: 0 },
-  //   size: { width: width, height: height },
-  // },
+  {
+    id: 6,
+    name: "foreground",
+    location: `${dir}/foreground/`,
+    elements: getElements(`${dir}/foreground/`),
+    position: { x: 0, y: 0 },
+    size: { width: width, height: height },
+  },
+  {
+    id: 7,
+    name: "beanObject",
+    location: `${dir}/beanObject/`,
+    elements: getElements(`${dir}/beanObject/`),
+    position: { x: 0, y: 0 },
+    size: { width: width, height: height },
+  },
 ];
 
 module.exports = { layers, width, height };
